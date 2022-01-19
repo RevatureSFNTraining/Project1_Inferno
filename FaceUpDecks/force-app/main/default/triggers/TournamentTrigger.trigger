@@ -7,7 +7,7 @@ trigger TournamentTrigger on Tournament__c (before insert, before delete, before
             TournamentTrigger_Helper.checkRounds(Trigger.new);
         }
         when BEFORE_UPDATE {
-            TournamentBadgeTrigger_Helper.checkRounds(Trigger.old, Trigger.new);
+            TournamentTrigger_Helper.checkCompleteRounds(Trigger.old, Trigger.new);
         }
     }
 }
