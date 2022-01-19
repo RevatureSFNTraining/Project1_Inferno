@@ -1,0 +1,77 @@
+/*Israel Escobedo, Project 1, 01/20/2022*/
+h1{
+    color: red;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{ 
+    color: red;   
+    font-size: 80px;
+    text-align:center;
+    text-decoration: underline;
+}
+
+h3{ 
+    color: red;   
+    font-size: 50px;
+    text-align:justify;
+    text-decoration: underline;
+}
+
+h4{
+    color: red;
+    font-size: 60px;
+}
+
+p{   
+    color: red; 
+    font-size: 35px;
+    text-align: center;
+}
+
+p.corporate{
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+img{
+    border-color: red;
+    border-style:solid;
+    border-width: 2mm;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+section{
+    background-color: black;
+}
+
+p.titles{  
+    color: red;  
+    font-size: 60px;
+    text-align:left;
+    text-decoration: underline;
+}
+
+label{    
+    color: red;  
+    font-size: 30px;
+}
+
+input{
+    font-size: 18px;
+}
+
+
