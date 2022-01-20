@@ -1,0 +1,227 @@
+<!--Israel Escobedo, Project 1, 01/20/2022-->
+<template>
+    <!--The custom tab set that will display information and online forms.-->
+    <lightning-tabset variant="scoped">
+
+        <lightning-tab label="About">
+            <section>
+                <br>
+
+                <!--Company logo.-->
+                <img src ={imgLogo} style="width:100px; height:100px;">
+                <br>
+                <br>
+
+                <!--Title of the About tab.-->
+                <h1>Vintage Loot Box</h1>
+
+                <!--Picture of collectibles.-->
+                <img src = {imgBox1} style="width:600px; height:400px;">
+                <br>
+
+                <!--Company statement.-->
+                <p>The subscription loot box with a pop culture vintage flare.</p> 
+                <br>
+                <br>
+
+                <!--Company statement.-->
+                <h2>About Vintage Loot Box</h2>
+
+                <!--Company statement.-->
+                <p>Vintage loot box is a premiere subscription service for the pop culture
+                   vintage collector. When you sign up for our subscription service, for a 
+                   monthly fee you will receive a box each month valued at $100 containing 
+                   vintage collectibles consisting of toys, comics, VHS tapes, video games, 
+                   trading cards, books, and other pop culture collectibles. Half of your
+                   collectibles in the box will come from either the 1970's, 1980's, or 1990's. 
+                   While the other half of the box will contain retro items from the 2000's 
+                   to current. Each box will have a theme like a Dinosaur box, Kaiju Box, 
+                   Scifi Box, or a Horror box. 
+                </p>
+                <br>
+            </section>
+        </lightning-tab>
+
+        <lightning-tab label="Subscriptions">
+            <section>
+                <!--Title of the Subscriptions tab.-->
+                <h1>Subscriptions</h1>
+
+                <!--Company statement.-->
+                <h2>Past Boxes</h2>
+
+                <!--Pictures of collectibles.-->
+                <div>
+                    <img src = {imgDinosaur} style="width:180px; height:180px;">
+                    <img src = {imgKaiju} style="width:180px; height:180px;">
+                    <img src = {imgScifi} style="width:180px; height:180px;">
+                    <img src = {imgHorror} style="width:180px; height:180px;"> 
+                </div>
+                <br>
+
+                <!--Picture descriptions.-->
+                <div>
+                    <h3>Dinosaur Box</h3>   
+                    <h3>Kaiju Box</h3>
+                    <h3>Scifi Box</h3>
+                    <h3>Horror Box</h3>
+                </div>
+                <br>
+                <br>
+
+                <!--Company statement.-->
+                <p>This month's Vintage Loot Box.</p>
+                <br>
+
+                <!--Company statement.-->
+                <p>Marvel Comics Box</p>                
+                <br>
+
+                <!--Picture of collectibles.-->
+                <img src = {imgMarvel} style="width:600px; height:400px;">
+                <br>
+
+                <!--Company statement.-->
+                <p>So sign up to get your Vintage Loot Box for this month.</p>
+                <br>
+                <br>
+
+                <!--Company statement.-->
+                <h2>Subscription Options</h2>
+
+                <!--Subscription options.-->
+                <table>
+                    <tr>
+                        <td><img src = {imgBlueBox} style="width:120px; height:120px;"></td>
+                        <td>
+                            <h3>Blue Vintage Loot Box </h3>
+                            <p>6 Months subscription $50/month ($300)</p>
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td><img src = {imgGreenBox} style="width:120px; height:120px;"></td>
+                        <td>
+                            <h3>Green Vintage Loot Box </h3>
+                            <p>12 Months subscription $40/month ($480)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src = {imgGoldBox} style="width:120px; height:120px;"></td>
+                        <td>
+                           <h3>Gold Vintage Loot Box </h3>
+                           <p>24 Months subscription $30/month ($720) </p>
+                        </td>
+                    </tr>
+                </table> 
+            </section>
+        </lightning-tab>
+
+        <lightning-tab label="Signup">
+            <section>
+                <!--Title of the Signup tab.-->
+                <h1>Signup</h1>
+
+                <!--Signup form.-->
+                <p class = "titles">Signup Form</p>
+                <lightning-record-edit-form object-api-name="Contact">
+                    <lightning-messages></lightning-messages>
+                    <label>Name: </label>
+                    <lightning-input-field field-name="Name"></lightning-input-field>
+                    <br>
+                    <label>E-mail: </label>
+                    <lightning-input-field field-name="Email" style="width:250px; height:20px"></lightning-input-field>
+                    <br>
+                    <label>Phone: </label>
+                    <lightning-input-field field-name="Phone" style="width:250px; height:20px"></lightning-input-field>
+                    <br>
+                    <label>Address: </label>
+                    <lightning-input-field field-name="Address__c" style="width:350px; height:20px"></lightning-input-field>
+                    <br>
+                    <br>
+                    <label>Apt#: </label>
+                    <lightning-input-field field-name="Apt__c" style="width:170px; height:20px"></lightning-input-field>
+                    <br>
+                    <label>City: </label>
+                    <lightning-input-field field-name="City__c" style="width:240px; height:20px"></lightning-input-field>
+                    <br>
+                    <br>
+                    <label>Zip Code: </label>
+                    <lightning-input-field field-name="Zip_Code__c" style="width:300px; height:20px"></lightning-input-field>
+                    <br>
+                    <label>State: </label>
+                    <lightning-input-field field-name="State_Territory__c" style="width:290px; height:20px"></lightning-input-field>
+                    <br>
+                    <label>Subscription Options: </label>
+                    <lightning-input-field field-name="Subscription__c" style="width:290px; height:20px"></lightning-input-field>
+                    <br>
+                    <label>Enter Today's Date: </label>
+                    <lightning-input-field field-name="Start_Date__c" style="width:220px; height:20px"></lightning-input-field>
+                    <br>
+                    <br>
+                    <br>
+                    <!--Button saves the information from the Shipping form and displays a confirmation message.-->
+                    <lightning-button variant="destructive" type="submit" label="Signup" onclick={handleSignup} class="slds-m-left_x-small"></lightning-button>
+                </lightning-record-edit-form> 
+
+                <!--Displays subscription confirmation message-->
+                <p>{greeting}</p>
+                <p>{confirmation}</p>
+                <p>{confirmNum}</p>
+                <p>{message} </p> 
+            </section>
+        </lightning-tab>
+
+        <lightning-tab label="Subscriber Help">
+            <section>
+                <!--Title of the Subscriber Help tab.-->
+                <h1>Subscriber Help</h1>
+            
+                <!--Company statement.-->
+                <p>
+                    If you have any questions regarding your Vintage Loot Box subscription feel free to fill out this online form.
+                    Within 48 hrs a customer service associate will contact you via phone to discsuss any issues with your subscriptions.
+                </p>
+                <br>
+                
+                <!--Subscriber Issue Form.-->
+                <lightning-record-edit-form object-api-name="Case">
+                    <lightning-messages></lightning-messages>
+                    <label>Subscriber ID: </label>
+                    <lightning-input-field field-name="Subscriber_ID__c" style="width:240px;height:20px"></lightning-input-field>
+                    <br>
+                    <label>Issue: </label>
+                    <lightning-input-field field-name="Issue__c" style="width:250px; height:20px"></lightning-input-field>
+                    <br>
+                    <label>Issue Note: </label>
+                    <lightning-input-field field-name="Note__c" style="width:500px; height:100px"></lightning-input-field>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                
+                    <!--Button saves the information from the Subscriber Issue form.--> 
+                    <lightning-button variant="destructive" type="submit" label="Submit" onclick={handleIssue} class="slds-m-left_x-small"></lightning-button>
+                    <br>
+                </lightning-record-edit-form>
+
+                <!--Displays a confirmation mesage that the subscriber issue has been sent to the company.-->>
+                <p>{sendIssue}</p>
+            </section>
+        </lightning-tab>
+    </lightning-tabset>
+
+
+    <!--Displays the company's contact information.-->
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-tile>
+                <!--Company's contact information.-->
+                <p class = "corporate">
+                    Vintage Loot Box, Inc. <br>
+                    1984 Black Lagoon Lane <br>
+                    El Paso, TX, 79915     <br>
+                    Phone: 915-777-8888    <br>
+                    E-mail: vintagelootbox@loot.net
+                </p>
+        </lightning-tile>
+    </div>
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>LightningInstrumentation</label>
+    <navType>Standard</navType>
+    <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Billing__c</tabs>
+    <tabs>Transactions__c</tabs>
+    <tabs>Box_Contents__c</tabs>
+    <tabs>Shipments__c</tabs>
+    <tabs>Box_Themes__c</tabs>
+    <tabs>Inventory__c</tabs>
+    <tabs>Customer_Service_Associate__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>
