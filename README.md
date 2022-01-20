@@ -9,3 +9,4 @@
 01/19/2022
 - Submitted a list of modifications I did to Project 0 for Project 1. I need to continue troubleshooting LWC, and test Apex classes/triggers. 
 - I submitted my SFDX Vintage Loot Box project with LWC, Apex Class/Trigger, and test code to Git hub. I also submitted a fodler with project related pcitures.
+- Presentation will be done in Google slides as part of group presentation.
