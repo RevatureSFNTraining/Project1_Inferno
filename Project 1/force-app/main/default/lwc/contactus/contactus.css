@@ -1,0 +1,28 @@
+.divcenter {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: darkred;
+    background-color: mediumaquamarine;
+    font-weight: bold;
+}
+
+button:hover {
+    color: darkred;
+    background-color: mediumaquamarine;
+    font-weight: bold;
+}
+
+button:focus {
+    color: darkred;
+    background-color: mediumaquamarine;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<template>
+    <div class="allcolors">
+        <h1 class="hugetext mytitle">Furniture of the Future</h1>
+        <div class="divcenter">
+            <div class="myflex">
+                
+            </div>
+        </div>
+
+        <div class="slds-button-group divcenter" role="group">
+            <button title="aboutUs" class="slds-button slds-button_neutral" onclick={handleClick}>About Us</button>
+            <button title="testimonials" class="slds-button slds-button_neutral" onclick={handleClick}>Testimonials</button>
+            <button title="catalog" class="slds-button slds-button_neutral" onclick={handleClick}>Catalog</button>
+            <button title="contactUs" class="slds-button slds-button_neutral" onclick={handleClick}>Contact Us</button>
+        </div>
+
+        <template if:true={aboutUsSelected}>
+            <c-aboutus></c-aboutus>
+        </template>
+        <template if:true={testimonialsSelected}>
+            <c-testimonials></c-testimonials>
+        </template>
+        <template if:true={catalogSelected}>
+            <c-catalog></c-catalog>
+        </template>
+        <template if:true={contactUsSelected}>
+            <c-contactus></c-contactus>
+        </template>
+    </div>
+</template>

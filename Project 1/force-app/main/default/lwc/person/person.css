@@ -1,0 +1,16 @@
+img {
+    max-width: 250px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+.left {
+    display: flex;
+    justify-content: left;
+}
+.mytitle {
+    text-align: center;
+    font-weight: bold;
+}
