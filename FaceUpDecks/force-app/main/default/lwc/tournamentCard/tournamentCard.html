@@ -1,8 +1,8 @@
 <template>
     <lightning-card>
         <img src={tournamentIcon}>
-        <lightning-textarea>{tournamentName}</lightning-textarea>
-        <lightning-textarea>{tournamentFilledSlots} / {tournamentTotalSlots} Registrations</lightning-textarea>
-        <lightning-button onclick={DisplayBracket}>Display Bracket</lightning-button>
+        <p>{tournamentName}</p>
+        <p>{tournamentFilledSlots} / {tournamentTotalSlots} Registrations</p>
+        <button onclick={PickTournament}>Display Bracket</button>
     </lightning-card>
 </template>

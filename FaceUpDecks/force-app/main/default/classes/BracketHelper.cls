@@ -5,7 +5,7 @@ public class BracketHelper {
     @AuraEnabled(cacheable = true)
     public static List<Round__c> getRoundList(){
         try {
-            return [SELECT Id, Participant_1__c, Participant_2__c, Winner__c, Tournament__c FROM Round__c];
+            return [SELECT Id, Participant_1__c, Participant_2__c, Winner__c, Tournament__c, Number__c FROM Round__c];
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
         }
@@ -14,7 +14,7 @@ public class BracketHelper {
     @AuraEnabled(cacheable = true)
     public static List<Round__c> getTournamentRounds(Tournament__c searchTourney){
         try {
-            return [SELECT Id, Participant_1__c, Participant_2__c, Winner__c, Tournament__c FROM Round__c WHERE Tournament__c =: searchTourney.ID];
+            return [SELECT Id, Participant_1__c, Participant_2__c, Winner__c, Tournament__c, Number__c FROM Round__c WHERE Tournament__c =: searchTourney.ID];
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
         }
@@ -32,7 +32,7 @@ public class BracketHelper {
     @AuraEnabled
     public static List<Tournament__c> getTournaments(){
         try {
-            return [SELECT Id, Name, Slots__c, Entrants__c, Completed__c, Banner_Icon__c FROM Tournament__c WHERE Completed__c = false];
+            return [SELECT Id, Name, Slots__c, Entrants__c, Completed__c, Banner_Icon__c, Total_Rounds__c FROM Tournament__c WHERE Completed__c = false];
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
         }

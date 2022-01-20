@@ -1,5 +1,4 @@
 import { LightningElement } from 'lwc';
-import BannerDisplay from '../bannerDisplay/bannerDisplay';
 
 export default class TournamentCard extends LightningElement {
     tournamentIcon;
@@ -7,7 +6,8 @@ export default class TournamentCard extends LightningElement {
     tournamentTotalSlots = 0;
     tournamentFilledSlots = 0;
 
-    DisplayBracket(){
-        BannerDisplay.selectedTournament = this.tournamentName;
+    PickTournament(){
+        const tournamentSelection = new CustomEvent('selection', {detail: this.tournamentName});
+        this.dispatchEvent(tournamentSelection);
     }
 }

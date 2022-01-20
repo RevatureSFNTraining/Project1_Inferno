@@ -1,11 +1,19 @@
 <template>
-    <template if:true={tournamentList.data}>
+    <template if:true={tournamentList.data} onselection={HandleSelection}>
         <template for:each={tournamentList.data} for:item="tourney">
             <c-tournament-card
             key={tourney.id}
             tournament-name={tourney.Name}
             tournament-icon={tourney.Banner_Icon__c}
             tournament-total-slots={tourney.Slots__c}
-            tournament-filled-slots={tourney.Emtrants__c}></c-tournament-card></template>
+            tournament-filled-slots={tourney.Entrants__c}></c-tournament-card></template>
+    </template>
+    <template if:false={tournamentList.data}>
+        <c-tournament-card
+            tournament-name='Default Tournament'
+            tournament-icon=''
+            tournament-total-slots=0
+            tournament-filled-slots=0></c-tournament-card></template>
+    </template>
     </template>
 </template>

@@ -1,3 +1,23 @@
 <template>
-    
+    <template if:true={tournamentList.data}>
+        <template for:each={tournamentList.data} for:item="tourney">
+            <template if:true={currentTournament}></template>
+        </template>
+        <h3 onselection={HandleSelection}>{currentTournament}</h3>
+        <template for:each={roundList.data} for:item="round">
+            <c-round-card
+            key={round.id}
+            participant-1={round.Participant_1__c}
+            participant-2={round.Participant_2__c}
+            winner={round.Winner__c}
+            completed={round.Completed__c}></c-round-card>
+        </template>
+    </template>
+    <template if:false={tournamentList.data}>
+        <c-round-card
+            participant-1='Devious Reavers'
+            participant-2='Chrome Chrysanthemums'
+            winner='To Be Decided'
+            completed=false></c-round-card>
+    </template>
 </template>
