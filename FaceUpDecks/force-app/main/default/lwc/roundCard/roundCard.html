@@ -1,6 +1,6 @@
 <template>
     <lightning-card>
-        <lightning-textarea>{participant_1} vs {participant_2}</lightning-textarea>
-        <lightning-textarea if:true={completed}>Winner: {winner}</lightning-textarea>
+        <h4>{participant_1} vs {participant_2}</h4>
+        <h6 if:true={completed}>Winner: {winner}</h6>
     </lightning-card>
 </template>
