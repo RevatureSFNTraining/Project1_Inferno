@@ -1,6 +1,8 @@
 <template>
     <lightning-card>
-        <lightning-textarea>Tournament Name</lightning-textarea>
-        <lightning-checkbox-group>Completed</lightning-checkbox-group>
+        <img src={tournamentIcon}>
+        <lightning-textarea>{tournamentName}</lightning-textarea>
+        <lightning-textarea>{tournamentFilledSlots} / {tournamentTotalSlots} Registrations</lightning-textarea>
+        <lightning-button onclick={DisplayBracket}>Display Bracket</lightning-button>
     </lightning-card>
 </template>

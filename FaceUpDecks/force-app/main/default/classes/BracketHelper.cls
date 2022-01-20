@@ -28,4 +28,13 @@ public class BracketHelper {
             throw new AuraHandledException(e.getMessage());
         }
     }
+
+    @AuraEnabled
+    public static List<Tournament__c> getTournaments(){
+        try {
+            return [SELECT Id, Name, Slots__c, Entrants__c, Completed__c, Banner_Icon__c FROM Tournament__c WHERE Completed__c = false];
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
 }
