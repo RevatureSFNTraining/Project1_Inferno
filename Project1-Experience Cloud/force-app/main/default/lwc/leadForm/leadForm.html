@@ -1,0 +1,50 @@
+<template>
+  <lightning-card class="card">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+      <input type=hidden name="oid" value="00D8c000000duhK">
+      <input type=hidden name="retURL"
+        value="https://wise-fox-q638j8-dev-ed.my.salesforce.com/servlet/networks/switch?networkId=0DB8c0000004Cgb&">
+
+      <div class="field">
+        <label for="first_name"><span> First Name</span></label>
+        <input id="first_name" maxlength="40" name="first_name" size="40" type="text" /><br>
+      </div>
+
+      <div class="field">
+        <label for="last_name"><span>Last Name</span></label>
+        <input id="last_name" maxlength="80" name="last_name" size="40" type="text" /><br>
+      </div>
+
+      <div class="field">
+        <label for="email"><span>Email</span></label>
+        <input id="email" maxlength="80" name="email" size="40" type="text" /><br>
+      </div>
+
+      <div class="field">
+        <label for="phone"><span>Phone</span></label>
+        <input id="phone" maxlength="40" name="phone" size="40" type="text" /><br>
+      </div>
+
+      <div class="field">
+        <span>Product Interest:</span><select id="00N8c00000Es6fz" name="00N8c00000Es6fz" title="Product Interest">
+          <option value="">--None--</option>
+          <option value="Coaching (1-on-1)">Coaching (1-on-1)</option>
+          <option value="Coaching Sessions (Group)">Coaching Sessions (Group)</option>
+          <option value="Consultation">Consultation</option>
+        </select><br>
+      </div>
+
+      <div class="field">
+        <label for="company"><span>Company</span></label>
+        <input id="company" maxlength="40" name="company" size="40" type="text" /><br>
+      </div>
+
+      <div class="field">
+        <button class="slds-button slds-button_brand">Submit</button>
+      </div>
+
+    </form>
+  </lightning-card>
+
+</template>
